@@ -1,0 +1,7 @@
+.button {
+	@apply border-2 border-white px-16 py-4 font-bold text-lg hover:bg-white hover:text-darkblue transition-all duration-300 custom-lg:px-11;
+
+	&.dark {
+		@apply border-darkblue hover:text-white hover:bg-darkblue;
+	}
+}

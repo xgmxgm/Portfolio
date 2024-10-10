@@ -1,0 +1,11 @@
+.header {
+	@apply flex flex-wrap items-center justify-between px-20 py-8 custom-lg:px-5;
+
+	&__left {
+		@apply w-full flex items-center justify-between;
+	}
+
+	&__wrapper {
+		@apply w-full flex justify-center;
+	}
+}

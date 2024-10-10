@@ -1,0 +1,16 @@
+.journey-title {
+	@apply flex justify-center items-center mt-20 mb-24;
+
+	&__wrapper {
+		@apply w-10/12 flex items-center justify-center gap-5;
+	}
+
+	.title {
+		font-family: cursive;
+		@apply text-4xl;
+	}
+
+	.icon {
+		@apply min-w-16 min-h-16;
+	}
+}

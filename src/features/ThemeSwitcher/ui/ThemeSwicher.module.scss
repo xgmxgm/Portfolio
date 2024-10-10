@@ -1,0 +1,7 @@
+.switcher {
+	@apply border-2 border-darkblue rounded-full min-w-10 min-h-10 flex items-center justify-center hover:scale-110 transition-all duration-200;
+
+	&.dark {
+		@apply border-white;
+	}
+}

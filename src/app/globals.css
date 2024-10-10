@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body.dark {
+	background-color: #1e1e2a;
+	color: #dddddb;
+	transition: 500ms;
+}
+
+body {
+	background-color: #dddddb;
+	color: #1e1e2a;
+	transition: 500ms;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	cursor: grab;
+	background: #555;
+}

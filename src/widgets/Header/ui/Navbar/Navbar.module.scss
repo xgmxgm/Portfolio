@@ -1,0 +1,13 @@
+.navbar {
+	.navbar__list {
+		@apply flex gap-10 text-xl font-bold custom-lg:gap-5;
+
+		.navbar__item {
+			@apply hover:scale-110 transition-all;
+
+			.navbar__link {
+				@apply hover:underline;
+			}
+		}
+	}
+}

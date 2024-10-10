@@ -1,0 +1,50 @@
+.about-me {
+	@apply w-full flex justify-center custom-lg:mt-48 mt-32;
+
+	&__wrapper {
+		@apply w-9/12;
+	}
+
+	&__top {
+		@apply w-full;
+	}
+
+	&__title {
+		@apply w-full mb-16;
+	}
+
+	&__title-text {
+		@apply text-4xl font-bold;
+	}
+
+	&__bottom {
+		@apply flex gap-8 custom-lg:flex-col custom-lg:items-center;
+	}
+
+	&__right {
+		@apply w-6/12 custom-lg:w-9/12;
+	}
+
+	&__left {
+		@apply w-6/12 custom-lg:w-full;
+	}
+
+	&__text {
+		@apply font-medium text-2xl leading-10;
+	}
+
+	&__img {
+		@apply w-full h-96;
+
+		.img {
+			@apply w-full h-full object-cover rounded-xl;
+		}
+	}
+
+	.red-text {
+		@apply font-extrabold bg-gradient-to-bl from-red-400 to-red-500 bg-clip-text text-transparent;
+	}
+	.blue-text {
+		@apply font-extrabold bg-gradient-to-bl from-blue-400 to-blue-500 bg-clip-text text-transparent;
+	}
+}

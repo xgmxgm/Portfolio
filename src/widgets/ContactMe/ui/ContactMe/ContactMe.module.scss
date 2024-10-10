@@ -1,0 +1,22 @@
+.contact-me {
+	@apply w-full flex justify-center mt-32;
+
+	&__wrapper {
+		@apply w-9/12;
+	}
+
+	&__top {
+		@apply mb-16;
+	}
+
+	&__title {
+	}
+
+	&__text {
+		@apply text-4xl font-bold text-left;
+	}
+
+	&__bottom {
+		@apply flex flex-wrap items-center justify-start gap-10 custom-lg:justify-center;
+	}
+}

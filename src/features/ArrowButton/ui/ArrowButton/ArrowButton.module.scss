@@ -1,0 +1,11 @@
+.button {
+	@apply border-2 border-darkblue rounded-full p-1;
+
+	&__wrapper {
+		@apply flex flex-col justify-center items-center hover:translate-y-1 hover:scale-90 transition-all duration-300;
+	}
+
+	&.dark {
+		@apply border-whiteslate;
+	}
+}

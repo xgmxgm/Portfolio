@@ -1,0 +1,34 @@
+.footer {
+	@apply flex justify-center pt-10 pb-4 mt-10 border-t-[1px] border-gray-800;
+
+	&__wrapper {
+		@apply w-10/12 font-bold text-xl flex flex-wrap items-center justify-between custom-lg:justify-center gap-5;
+	}
+
+	&__left {
+		@apply mb-10;
+	}
+
+	&__center {
+		@apply mb-10;
+	}
+
+	&__right {
+		@apply flex flex-col items-center;
+	}
+
+	&__links {
+	}
+
+	.link {
+		@apply m-3 text-gray-500 hover:text-whiteslate transition-all duration-300;
+
+		&.dark {
+			@apply hover:text-darkblue;
+		}
+	}
+
+	.title {
+		@apply mb-1;
+	}
+}

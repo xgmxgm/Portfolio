@@ -1,0 +1,11 @@
+.logo {
+	@apply flex-col justify-start;
+
+	.logo__title {
+		@apply font-bold text-2xl;
+	}
+
+	.logo__subtitle {
+		@apply font-bold text-[#9CA3AF];
+	}
+}

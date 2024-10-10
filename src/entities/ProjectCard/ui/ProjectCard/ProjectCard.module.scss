@@ -1,0 +1,35 @@
+.project-card {
+	@apply w-96 border-2 border-whiteslate rounded-md text-whiteslate text-lg;
+
+	&__wrapper {
+	}
+
+	&__top {
+	}
+
+	&__img-wrapper {
+		.img {
+			@apply rounded-md;
+		}
+	}
+
+	&__bottom {
+		@apply flex flex-col px-6 py-5;
+	}
+
+	&__title {
+		@apply font-bold;
+	}
+
+	&__link {
+		@apply flex font-bold items-center hover:scale-105 hover:translate-x-7 transition-all;
+	}
+
+	&__arrow {
+		@apply -rotate-90;
+	}
+
+	&.dark {
+		@apply text-darkblue border-darkblue;
+	}
+}

@@ -1,0 +1,19 @@
+.card-link {
+	@apply min-w-72 border-2 border-whiteslate rounded-lg p-2 hover:bg-whiteslate hover:text-darkblue transition-all duration-200 custom-lg:w-full;
+
+	&.dark {
+		@apply border-darkblue hover:bg-darkblue hover:text-whiteslate custom-lg:w-full;
+	}
+
+	&__wrapper {
+		@apply flex items-center gap-5;
+	}
+
+	&__title {
+		@apply mt-6 mb-6;
+	}
+
+	&__text {
+		@apply text-2xl font-medium;
+	}
+}

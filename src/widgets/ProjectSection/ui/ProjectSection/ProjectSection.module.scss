@@ -1,0 +1,7 @@
+.project-section {
+	@apply flex justify-center;
+
+	&__wrapper {
+		@apply w-10/12 flex items-center justify-center flex-wrap gap-y-10 gap-x-10;
+	}
+}
