@@ -1,8 +1,8 @@
 'use client'
 
-import { pVariants, transitionSettings } from '../../animations'
 import { headerLinks } from '@/widgets/Header/constants'
 import { ThemeContext } from '@/entities/Theme/model'
+import { pVariants } from '../../animations'
 import styles from './Footer.module.scss'
 import { Logo } from '@/shared/ui/Logo'
 import { motion } from 'framer-motion'
@@ -20,7 +20,6 @@ export const Footer = () => {
 			whileInView='visible'
 			viewport={{ amount: 1, once: true }}
 			variants={pVariants}
-			transition={transitionSettings}
 		>
 			<div className={styles['footer__wrapper']}>
 				<div className={styles['footer__left']}>

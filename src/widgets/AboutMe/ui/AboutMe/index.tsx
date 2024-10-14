@@ -13,6 +13,7 @@ export const AboutMe = () => {
 					className={styles['about-me__top']}
 					initial='hidden'
 					whileInView='visible'
+					viewport={{ amount: 1, once: true }}
 					variants={pVariants}
 					transition={transitionSettings}
 				>
@@ -27,6 +28,7 @@ export const AboutMe = () => {
 						className={styles['about-me__right']}
 						initial='hidden2'
 						whileInView='visible2'
+						viewport={{ amount: 1, once: true }}
 						variants={pVariants}
 						transition={transitionSettings}
 					>
@@ -44,6 +46,7 @@ export const AboutMe = () => {
 						className={styles['about-me__left']}
 						initial='hidden3'
 						whileInView='visible3'
+						viewport={{ amount: 0.1, once: true }}
 						variants={pVariants}
 						transition={transitionSettings}
 					>
