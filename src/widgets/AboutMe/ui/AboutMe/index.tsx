@@ -1,19 +1,35 @@
+'use client'
+
+import { pVariants, transitionSettings } from '../../animations'
 import styles from './AboutMe.module.scss'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export const AboutMe = () => {
 	return (
 		<div className={styles['about-me']} id='aboutMe'>
 			<div className={styles['about-me__wrapper']}>
-				<div className={styles['about-me__top']}>
+				<motion.div
+					className={styles['about-me__top']}
+					initial='hidden'
+					whileInView='visible'
+					variants={pVariants}
+					transition={transitionSettings}
+				>
 					<div className={styles['about-me__title']}>
 						<p className={styles['about-me__title-text']}>
 							More About Kalkabekov Ernar
 						</p>
 					</div>
-				</div>
+				</motion.div>
 				<div className={styles['about-me__bottom']}>
-					<div className={styles['about-me__right']}>
+					<motion.div
+						className={styles['about-me__right']}
+						initial='hidden2'
+						whileInView='visible2'
+						variants={pVariants}
+						transition={transitionSettings}
+					>
 						<div className={styles['about-me__img']}>
 							<Image
 								className={styles['img']}
@@ -23,8 +39,14 @@ export const AboutMe = () => {
 								height={100}
 							/>
 						</div>
-					</div>
-					<div className={styles['about-me__left']}>
+					</motion.div>
+					<motion.div
+						className={styles['about-me__left']}
+						initial='hidden3'
+						whileInView='visible3'
+						variants={pVariants}
+						transition={transitionSettings}
+					>
 						<div className={styles['about-me__info']}>
 							<p className={styles['about-me__text']}>
 								My name is
@@ -39,7 +61,7 @@ export const AboutMe = () => {
 								other puzzles.
 							</p>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>

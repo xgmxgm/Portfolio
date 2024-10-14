@@ -1,9 +1,11 @@
 'use client'
 
+import { pVariants, transitionSettings } from '../../animations'
 import { headerLinks } from '@/widgets/Header/constants'
 import { ThemeContext } from '@/entities/Theme/model'
 import styles from './Footer.module.scss'
 import { Logo } from '@/shared/ui/Logo'
+import { motion } from 'framer-motion'
 import classNames from 'classnames'
 import { useContext } from 'react'
 import Link from 'next/link'
@@ -12,7 +14,14 @@ export const Footer = () => {
 	const { isDark } = useContext(ThemeContext)
 
 	return (
-		<div className={styles['footer']}>
+		<motion.div
+			className={styles['footer']}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 1, once: true }}
+			variants={pVariants}
+			transition={transitionSettings}
+		>
 			<div className={styles['footer__wrapper']}>
 				<div className={styles['footer__left']}>
 					<Logo />
@@ -39,6 +48,6 @@ export const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }

@@ -1,10 +1,12 @@
 'use client'
 
 import { ArrowButton } from '@/features/ArrowButton/ui/ArrowButton'
+import { pVariants, transitionSettings } from '../../animations'
 import { ThemeContext } from '@/entities/Theme/model'
 import styles from './WelcomeSection.module.scss'
 import { Button } from '@/shared/ui/Button'
 import { useRouter } from 'next/navigation'
+import { motion } from 'framer-motion'
 import classNames from 'classnames'
 import { useContext } from 'react'
 import Image from 'next/image'
@@ -16,7 +18,13 @@ export const WelcomeSection = () => {
 	return (
 		<div className={styles['welcome-section']}>
 			<div className={styles['welcome-section__wrapper']}>
-				<div className={styles['welcome-section__left']}>
+				<motion.div
+					className={styles['welcome-section__left']}
+					initial='hidden'
+					animate='visible'
+					variants={pVariants}
+					transition={transitionSettings}
+				>
 					<div className={styles['welcome-section__top']}>
 						<div className={styles['welcome-section__title']}>
 							<p className={styles['welcome-section__text']}>
@@ -32,8 +40,14 @@ export const WelcomeSection = () => {
 							</Button>
 						</div>
 					</div>
-				</div>
-				<div className={styles['welcome-section__right']}>
+				</motion.div>
+				<motion.div
+					className={styles['welcome-section__right']}
+					initial='hidden2'
+					animate='visible2'
+					variants={pVariants}
+					transition={transitionSettings}
+				>
 					<div className={styles['welcome-section__img']}>
 						<Image
 							className={classNames({ [styles.dark]: !isDark }, styles['img'])}
@@ -44,11 +58,17 @@ export const WelcomeSection = () => {
 							priority
 						/>
 					</div>
-				</div>
+				</motion.div>
 			</div>
-			<div className={styles['welcome-section__wrapper-bottom']}>
+			<motion.div
+				className={styles['welcome-section__wrapper-bottom']}
+				initial='hidden3'
+				animate='visible3'
+				variants={pVariants}
+				transition={transitionSettings}
+			>
 				<ArrowButton toId='aboutMe' />
-			</div>
+			</motion.div>
 		</div>
 	)
 }
