@@ -28,7 +28,7 @@ export const AboutMe = () => {
 						className={styles['about-me__right']}
 						initial='hidden2'
 						whileInView='visible2'
-						viewport={{ amount: 1, once: true }}
+						viewport={{ once: true }}
 						variants={pVariants}
 						transition={transitionSettings}
 					>
