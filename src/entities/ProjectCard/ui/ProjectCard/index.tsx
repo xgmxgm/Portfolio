@@ -25,6 +25,7 @@ export const ProjectCard: FC<Project> = ({ img, title, link }) => {
 							alt='Project img'
 							width={400}
 							height={0}
+							priority
 						/>
 					</div>
 				</div>
