@@ -34,7 +34,9 @@ export const ProjectCard: FC<Project> = ({ img, title, link }) => {
 						<p className={styles['project-card__text']}>{title}</p>
 					</div>
 					<div className={styles['project-card__link']}>
-						<Link href={link}>My website</Link>
+						<Link href={link} target='_blank'>
+							My website
+						</Link>
 						<div className={styles['project-card__arrow']}>
 							{isDark ? <ArrowLight /> : <ArrowBlack />}
 						</div>

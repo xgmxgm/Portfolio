@@ -1,9 +1,9 @@
 'use client'
 
 import { ArrowBlack, ArrowLight } from '@/shared/ui/Icons/Arrow'
+import { pVariants, transitionSettings } from '../../animations'
 import { ThemeContext } from '@/entities/Theme/model'
 import { Step } from '@/shared/ui/Icons/Step'
-import { pVariants, transitionSettings } from '../../animations'
 import styles from './Road.module.scss'
 import { RoadType } from '../../types'
 import { FC, useContext } from 'react'
@@ -48,6 +48,7 @@ export const Road: FC<RoadType> = ({
 							viewport={{ once: true }}
 							custom={index}
 							variants={pVariants}
+							key={index}
 						>
 							{step}
 						</motion.div>
