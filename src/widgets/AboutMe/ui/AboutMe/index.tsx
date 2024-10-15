@@ -13,7 +13,7 @@ export const AboutMe = () => {
 					className={styles['about-me__top']}
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ amount: 1, once: true }}
+					viewport={{ once: true }}
 					variants={pVariants}
 					transition={transitionSettings}
 				>

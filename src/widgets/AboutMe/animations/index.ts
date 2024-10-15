@@ -7,7 +7,7 @@ export const transitionSettings = {
 }
 
 export const pVariants = {
-	hidden: { y: -100, opacity: 0 },
+	hidden: { y: -80, opacity: 0 },
 	visible: { y: 0, opacity: 1 },
 	hidden2: { x: -100, opacity: 0 },
 	visible2: { x: 0, opacity: 1 },
