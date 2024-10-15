@@ -1,12 +1,12 @@
 .welcome-section {
-	@apply w-full min-h-[83vh] flex flex-col items-center justify-around;
+	@apply w-full min-h-[83vh] flex flex-col items-center justify-around overflow-hidden;
 
 	&__wrapper {
 		@apply w-9/12 custom-lg:w-full flex custom-lg:flex-col-reverse justify-between items-center;
 	}
 
 	&__left {
-		@apply w-6/12 flex-col items-center;
+		@apply w-6/12 flex-col items-center custom-lg:w-11/12;
 	}
 
 	&__top {
@@ -18,7 +18,7 @@
 	}
 
 	&__text {
-		@apply custom-lg:text-3xl text-4xl font-bold text-left leading-snug;
+		@apply custom-lg:text-center custom-lg:text-3xl text-4xl font-bold text-left leading-snug;
 	}
 
 	&__bottom {

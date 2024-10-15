@@ -12,6 +12,8 @@ export const ContactMe = () => {
 			className={styles['contact-me']}
 			initial='hidden'
 			whileInView='visible'
+			viewport={{ once: true }}
+			style={{ overflow: 'hidden' }}
 		>
 			<div className={styles['contact-me__wrapper']}>
 				<div className={styles['contact-me__top']}>
@@ -20,7 +22,9 @@ export const ContactMe = () => {
 						initial='hidden2'
 						whileInView='visible2'
 						variants={pVariants}
+						viewport={{ once: true }}
 						transition={{ delay: 1 }}
+						style={{ overflow: 'hidden' }}
 					>
 						<p className={styles['contact-me__text']}>Contact me</p>
 					</motion.div>

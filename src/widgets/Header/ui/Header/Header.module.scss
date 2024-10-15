@@ -1,8 +1,8 @@
 .header {
-	@apply flex flex-wrap items-center justify-between px-20 py-8 custom-lg:px-5;
+	@apply flex flex-wrap items-center justify-between px-20 py-8 custom-lg:px-5 overflow-hidden;
 
 	&__left {
-		@apply w-full flex items-center justify-between;
+		@apply w-full flex items-center justify-around;
 	}
 
 	&__wrapper {
