@@ -13,7 +13,7 @@ export const AboutMe = () => {
 					className={styles['about-me__top']}
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ once: true }}
+					viewport={{ once: true, amount: 0 }}
 					variants={pVariants}
 					transition={transitionSettings}
 				>
@@ -39,6 +39,8 @@ export const AboutMe = () => {
 								alt='img'
 								width={100}
 								height={100}
+								quality={100}
+								priority={true}
 							/>
 						</div>
 					</motion.div>

@@ -1,10 +1,8 @@
 .project-card {
-	@apply w-96 border-2 border-whiteslate rounded-md text-whiteslate text-lg;
+	@apply w-96 border-2 border-whiteslate rounded-md text-whiteslate text-lg custom-lg:w-80;
 
-	&__wrapper {
-	}
-
-	&__top {
+	&__icon {
+		@apply hover:scale-110 transition-all;
 	}
 
 	&__img-wrapper {
@@ -18,7 +16,7 @@
 	}
 
 	&__title {
-		@apply font-bold;
+		@apply font-bold flex items-center justify-between;
 	}
 
 	&__link {

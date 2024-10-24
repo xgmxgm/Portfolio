@@ -22,6 +22,7 @@ export const ProjectSection = () => {
 							img={project.img}
 							title={project.title}
 							link={project.link}
+							gitLink={project.gitLink}
 							key={index}
 						/>
 					</motion.div>

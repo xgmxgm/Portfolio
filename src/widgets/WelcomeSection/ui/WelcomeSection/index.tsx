@@ -51,11 +51,12 @@ export const WelcomeSection = () => {
 					<div className={styles['welcome-section__img']}>
 						<Image
 							className={classNames({ [styles.dark]: !isDark }, styles['img'])}
-							src='/images/photo_1.jpg'
+							src='/images/photo_2.webp'
 							alt='photo'
 							width={200}
 							height={50}
-							priority
+							quality={100}
+							priority={true}
 						/>
 					</div>
 				</motion.div>

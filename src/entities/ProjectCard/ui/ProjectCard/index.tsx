@@ -1,5 +1,6 @@
 'use client'
 
+import { GitHubDark, GitHubLight } from '@/shared/ui/Icons/GitHub'
 import { ArrowBlack, ArrowLight } from '@/shared/ui/Icons/Arrow'
 import { ThemeContext } from '@/entities/Theme/model'
 import styles from './ProjectCard.module.scss'
@@ -9,7 +10,7 @@ import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const ProjectCard: FC<Project> = ({ img, title, link }) => {
+export const ProjectCard: FC<Project> = ({ img, title, link, gitLink }) => {
 	const { isDark } = useContext(ThemeContext)
 
 	return (
@@ -25,13 +26,20 @@ export const ProjectCard: FC<Project> = ({ img, title, link }) => {
 							alt='Project img'
 							width={400}
 							height={0}
-							priority
+							priority={true}
 						/>
 					</div>
 				</div>
 				<div className={styles['project-card__bottom']}>
 					<div className={styles['project-card__title']}>
 						<p className={styles['project-card__text']}>{title}</p>
+						<Link
+							href={gitLink}
+							target='_blank'
+							className={styles['project-card__icon']}
+						>
+							{isDark ? <GitHubLight /> : <GitHubDark />}
+						</Link>
 					</div>
 					<div className={styles['project-card__link']}>
 						<Link href={link} target='_blank'>
