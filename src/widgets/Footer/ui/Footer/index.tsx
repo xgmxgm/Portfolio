@@ -44,6 +44,13 @@ export const Footer = () => {
 								{link.name}
 							</Link>
 						))}
+						<Link
+							className={classNames({ [styles.dark]: !isDark }, styles['link'])}
+							href='https://github.com/xgmxgm/XGMXGM'
+							target='_blank'
+						>
+							Resume
+						</Link>
 					</div>
 				</div>
 			</div>

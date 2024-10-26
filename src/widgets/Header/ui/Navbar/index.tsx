@@ -13,6 +13,15 @@ export const NavBar = () => {
 						</Link>
 					</li>
 				))}
+				<li className={styles.navbar__item}>
+					<Link
+						className={styles.navbar__link}
+						href='https://github.com/xgmxgm/XGMXGM'
+						target='_blank'
+					>
+						Resume
+					</Link>
+				</li>
 			</ul>
 		</nav>
 	)
