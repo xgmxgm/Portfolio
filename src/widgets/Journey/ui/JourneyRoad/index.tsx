@@ -12,6 +12,9 @@ export const JourneyRoad = () => {
 						icon_1={road.icon_1}
 						icon_2={road.icon_2}
 						icon_3={road.icon_3}
+						icon_1_info={road.icon_1_info}
+						icon_2_info={road.icon_2_info}
+						icon_3_info={road.icon_3_info}
 						title={road.title}
 						text={road.text}
 						key={index}

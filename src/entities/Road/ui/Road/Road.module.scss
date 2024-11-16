@@ -10,7 +10,7 @@
 	}
 
 	&__item {
-		@apply cursor-pointer hover:scale-150 transition-all duration-200;
+		@apply cursor-pointer hover:scale-150 transition-all duration-200 z-10;
 	}
 
 	&__center {

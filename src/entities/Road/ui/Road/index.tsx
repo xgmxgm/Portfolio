@@ -3,6 +3,7 @@
 import { ArrowBlack, ArrowLight } from '@/shared/ui/Icons/Arrow'
 import { pVariants, transitionSettings } from '../../animations'
 import { ThemeContext } from '@/entities/Theme/model'
+import { HoverCard } from '@/shared/ui/HoverCard'
 import { Step } from '@/shared/ui/Icons/Step'
 import styles from './Road.module.scss'
 import { RoadType } from '../../types'
@@ -26,6 +27,9 @@ export const Road: FC<RoadType> = ({
 	icon_1,
 	icon_2,
 	icon_3,
+	icon_1_info,
+	icon_2_info,
+	icon_3_info,
 	title,
 	text,
 	id,
@@ -37,8 +41,12 @@ export const Road: FC<RoadType> = ({
 		<div className={styles['road']} id={`${id}`}>
 			<div className={styles['road__wrapper']}>
 				<div className={styles['road__left']}>
-					<div className={styles['road__item']}>{icon_1}</div>
-					<div className={styles['road__item']}>{icon_2}</div>
+					<div className={styles['road__item']}>
+						<HoverCard icon={icon_1} iconContent={icon_1_info} />
+					</div>
+					<div className={styles['road__item']}>
+						<HoverCard icon={icon_2} iconContent={icon_2_info} />
+					</div>
 				</div>
 				<div className={styles['road__center']}>
 					{Steps.map((step, index) => (
@@ -55,7 +63,9 @@ export const Road: FC<RoadType> = ({
 					))}
 				</div>
 				<div className={styles['road__right']}>
-					<div className={styles['road__item']}>{icon_3}</div>
+					<div className={styles['road__item']}>
+						<HoverCard icon={icon_3} iconContent={icon_3_info} />
+					</div>
 				</div>
 			</div>
 			<motion.div
