@@ -1,5 +1,5 @@
 .hover-card {
-	@apply w-96 bg-darkblue border-gray-600 border-[1px] text-lg font-medium p-2 rounded-md;
+	@apply z-10 w-96 bg-darkblue border-gray-600 border-[1px] text-lg font-medium p-2 rounded-md;
 	transform-origin: var(--radix-hover-card-content-transform-origin);
 	animation: scaleIn 0.1s linear;
 
